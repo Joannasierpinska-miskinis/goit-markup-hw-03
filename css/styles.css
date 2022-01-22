@@ -8,6 +8,33 @@ body {
     font-family: var(--main-font);
     color: #212121;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
 /*########## COMPONENTS ##########*/
 
 .background{
@@ -15,36 +42,67 @@ body {
     }
 .logo,
 .navigation-list-link,
-.address-phone-mail,
+.address-phone-header,
+.address-mail-header,
 .footer-logo,
 .address-mail,
 .address-phone{
     text-decoration: none;
-        none
+    
     }
     
 /*########## END OF COMPONENTS ##########*/
 
 /* ########## HEADER ########## */
 
+.header .container{
+    display: flex;
+    align-items: center;   
+}
+.navigation{
+    display:flex;
+}
+.navigation-list{
+    list-style: none; 
+    display: flex;
+    align-items: center; 
+}
 .logo {
     font-family: var(--secondary-font);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    text-align: left;
     color: black;
+    margin-right: 93px;
+    align-items: center; 
 }  
 .accent{
     color: var(--main-color);
 }
+.navigation-list-item:not(:last-child){
+    margin-right: 46px;
+}
+
+.address-mail-header { 
+    margin-left: auto;
+    list-style: none; 
+}
+.address-phone-header{
+    margin-left: 50px;
+    list-style: none; 
+}
+
+
 .navigation-list-link,
-.address-phone-mail{
+.address-mail-header,
+.address-phone-header{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    margin-top: 32px;
 } 
 .navigation-list-link
 {
@@ -52,17 +110,36 @@ body {
 }
 
 .navigation-list-link:hover,
-.navigation-list-link:hover,
-.address-phone-mail:hover,
-.address-phone-mail:focus{
+.navigation-list-link:focus,
+.address-mail-header:hover,
+.address-mail-header:focus,
+.address-phone-header:hover,
+.address-phone-header:focus{
     color:var(--main-color)
 }
-.address-phone-mail{
+.address-mail-header,
+.address-phone-header{
     color:#757575;
 }
 /* ##########  END HEADER ########## */
 
 /* ########## HERO ########## */
+.hero .container{
+    height: 600px;
+    width: 1600px;
+    left: 0px;
+    top: 80px;
+    border-radius: 0px;
+    display: flex;
+
+}
+
+.inside{
+height: 200px;
+width: 694px;
+margin: 0 auto;
+display: block;
+}
 
 .main-headline{
     font-size: 44px;
@@ -71,9 +148,14 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     color: #FFFFFF;
+
 }
 
     .modal-button{
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 10 41;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
@@ -81,10 +163,25 @@ body {
     color: #FFFFFF;
     background-color: var(--main-color);
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    
 }
     /* ##########  END HERO ########## */
 
 /*############ OUR STRENGHTS #############*/
+.our-strenghts .container {
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    margin-top: 94px;
+    margin-bottom: 94px;
+   
+}
+.strenghts-list{
+    display: flex;
+    list-style: none;
+}
 
 .strenghts-list-title{
     font-size: 14px;
@@ -93,18 +190,35 @@ body {
     line-height: 1.143;
     letter-spacing: 0.03em;
     color:#212121;
+    margin-bottom: 10px;
+    list-style: none;
 }
 .strenghts-list-item{
     font-size: 14px;
     font-weight: 400;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: #757575; 
+
+
+}
+.strenghts-items:not(:last child) {
+    margin-right:30px;
 }
 
 /*############ END OUR STRENGHTS #############*/
 
 /* ############ WHAT DO WE DO ############*/
+
+.what-do-we-do .container{
+    width: 1170;
+}
+.img-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 94px;
+}
 .headline{
     font-size: 36px;
     font-weight: 700;
@@ -112,30 +226,66 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color:#212121;
+    margin-bottom: 50px;
 }
+
 /* ############ END WHAT DO WE DO ############*/
 /* ########### OUR TEAM ############ */ 
+
+
+.our-team-background .container {
+    width: 1600px;
+    background-color: #F5F4FA;
+}
+.our-team-background .headline{
+    padding-top: 94px;
+}
+.cards-box {
+    width: 1170;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    height: 368px;
+    width: 270px;
+    background-color: #FFFFFF;
+   
+}
+.img-list-item:not(last child) {
+margin-right: 30px;
+}
 .photo-name{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.187;
     letter-spacing: 0.03em;
-    
     color:#212121;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .job-description{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.187;
     letter-spacing: 0.03em;
-   
     color:#757575;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
-.our-team-background {
-    background-color: #F5F4FA;
-}
+
 /* ########### END OUR TEAM ############ */ 
 /*######### FOOTER ########### */
+
+.footer-background .container {
+    height: 252px;
+    width: 1600px;
+}
 .footer-background{
     background-color: #2F303A;}
   
@@ -144,10 +294,22 @@ body {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.192;
     letter-spacing: 0.03em;
     color:#FFFFFF;
+    margin-left: 215px; 
+    display: flex;
+    padding-top: 60px;
+    
 }
+.address {
+    margin-left: 215px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 
 .adress-paragraf, .address-mail, .address-phone {  
 font-size: 14px;
@@ -158,9 +320,14 @@ letter-spacing: 0.03em;
 
 .adress-paragraf{
     color: #FFFFFF;
+    margin-bottom: 9px;
+}
+.address-mail{
+    margin-bottom: 9px;
 }
 .address-mail, .address-phone {
     color: rgba(255, 255, 255, 0.6);
+    
 }
 /*######### END FOOTER ########### */
 
