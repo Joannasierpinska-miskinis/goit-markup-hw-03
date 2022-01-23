@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div>
     <!--HEADER-->
     <header class="header"> 
         <div class="container">
@@ -38,13 +39,24 @@
     
     <main>
         <!--buttons-->
+        <div class="main-container">
         <section class="btn">
-            <span><button class="btn-main" type="button">Wszystkie</button></span>
-            <span><button class="btn-main" type="button">Strony</button></span>
-            <span><button class="btn-main" type="button">Aplikacje</button></span>
-            <span><button class="btn-main" type="button">Dizajn</button></span>
-            <span><button class="btn-main" type="button">Marketing</button></span>
+            <div class="btn-container">
+            <ul class="btn-list">
+                 <li class="btn-item">
+                <button class="btn-nav" type="button">Wszystkie</button></li>
+                <li class="btn-item">
+                <button class="btn-nav" type="button">Strony</button></li>
+                <li class="btn-item">
+                <button class="btn-nav" type="button">Aplikacje</button></li>
+                <li class="btn-item">
+                <button class="btn-nav" type="button">Dizajn</button></li>
+                <li class="btn-item">
+                <button class="btn-nav" type="button">Marketing</button></li>
+            </ul>
+            </div>
         </section>
+        
         <!--project's images-->
 
         <section class="portfolio">
@@ -92,30 +104,40 @@
             <li class="portfolio-list-item">
                 <img src="images/img9.jpg" alt="hands writing on the laptop keyboard, on the screen vissible headline growing business" width="370" height="291.62">
                 <h3 class="project-headline">Growing Business</h3>
-                <p class="project">Aplikacja</p>
+                <p class="project-type">Aplikacja</p>
             </li>
         </ul>
+        </div>
         </section>
+        
     </main>
 
     <!--ADDRESS-->
     <footer>
-        <section class="footer-background">
-            <a class="footer-logo" href="index.html"><span class="accent">Web</span>Studio</a>
     
-            <address class="address">
-                <ul>
-                    <li>
-                        <p class="adress-paragraf">m.Warszawa, Aleje Jerozolimskie 21</p>
-                    </li>
-                    <li><a class="address-mail" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="address-phone" href="tel:+48111111111">+48 111 111 111</a></li>
-                </ul>
-            </address>
+        <section class="footer-background">
+            <div class="container">
+                <a class="footer-logo" href="index.html"><span class="accent">Web</span>Studio</a>
+    
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list-item">
+                            <p class="adress-paragraf">m.Warszawa, Aleje Jerozolimskie 21</p>
+                        </li>
+    
+                        <li class="address-list-item">
+                            <a class="address-mail" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+    
+                        <li class="address-list-item">
+                            <a class="address-phone" href="tel:+48111111111">+48 111 111 111</a>
+                        </li>
+                    </ul>
+                </address>
         </section>
+        </div>
     
     </footer>
-
 </body>
 
 </html>
