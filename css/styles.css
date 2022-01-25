@@ -7,7 +7,7 @@
 body {
     font-family: var(--main-font);
     color: #212121;
-    width: 1600px;
+    
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -38,9 +38,7 @@ img{
 
 /*########## COMPONENTS ##########*/
 
-.background{
-        background-color: #2F303A;
-    }
+        
 .logo,
 .navigation-list-link,
 .address-phone-header,
@@ -125,22 +123,21 @@ img{
 /* ##########  END HEADER ########## */
 
 /* ########## HERO ########## */
-.hero .container{
+.hero {
+    background-color: #2F303A;
     height: 600px;
-    width: 1600px;
-    left: 0px;
-    top: 80px;
-    border-radius: 0px;
-    display: flex;
-
+    align-items: center;
 }
-
 .inside{
     height: 200px;
     width: 694px;
     margin: 0 auto;
     display: block;
+    padding-top: 200px;
 }
+
+
+
 
 .main-headline{
     font-size: 44px;
@@ -171,6 +168,7 @@ img{
     /* ##########  END HERO ########## */
 
 /*############ OUR STRENGHTS #############*/
+
 .our-strenghts .container {
     width: 1200px;
     display: flex;
@@ -203,7 +201,6 @@ img{
 }
 
 
-
 /*############ END OUR STRENGHTS #############*/
 
 /* ############ WHAT DO WE DO ############*/
@@ -231,20 +228,20 @@ img{
 /* ########### OUR TEAM ############ */ 
 
 
-.our-team-background .container {
-    width: 1600px;
+.our-team {
     background-color: #F5F4FA;
 }
-.our-team-background .headline{
+.our-team .headline{
     padding-top: 94px;
 }
 .cards-box {
-    width: 1200px;
+
     display: flex;
     justify-content: center;
-    margin-left: 185px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 94px;
 }
-
 
 .card {
     height: 368px;
@@ -281,10 +278,9 @@ img{
 /* ########### END OUR TEAM ############ */ 
 /*######### FOOTER ########### */
 
-.footer-background .container {
-    height: 252px;
-    width: 1600px;
-    background-color: #2F303A;}
+.footer 
+{background-color: #2F303A}
+
 
   
 .footer-logo{
@@ -295,18 +291,18 @@ img{
     line-height: 1.192;
     letter-spacing: 0.03em;
     color:#FFFFFF;
-    margin-left: 215px; 
-    display: flex;
     padding-top: 60px;
+    margin: 0 auto;
+    display: flex;
+    
     
 }
 .address-list {
-    margin-left: 215px;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     list-style: none;
-    
+    margin-top: 20px;
+    margin: 0 auto;
 }
 
 
@@ -337,11 +333,7 @@ img{
 }
 
 
-.main-container{
-    width: 1200px;
-    margin: 94px 215px;
-    
-}
+
 /* ############# BUTTONS ############*/
 
 
@@ -349,9 +341,10 @@ img{
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0 auto;
     justify-content: center;
+    margin-top: 94px;
     margin-bottom: 50px;
+    
 }
 .btn-nav{ 
     font-family: Roboto;
@@ -367,7 +360,7 @@ img{
     border: 0px;
     padding: 6px 22px;
     justify-content: center;
-    margin: 0 auto;
+
 }
 .btn-list >.btn-item:not(:last-child) {
     margin-right: 8px;
@@ -388,7 +381,8 @@ img{
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px; 
-    
+    padding-bottom: 94px;
+    justify-content: center;
 }
 
 .portfolio-list-item{
