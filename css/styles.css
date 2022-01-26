@@ -279,8 +279,13 @@ img{
 /*######### FOOTER ########### */
 
 .footer 
-{background-color: #2F303A}
-
+{background-color: #2F303A;
+display: flex;
+align-items: center;
+}
+.footer .container{
+    height: 252px;
+}
 
   
 .footer-logo{
@@ -291,9 +296,10 @@ img{
     line-height: 1.192;
     letter-spacing: 0.03em;
     color:#FFFFFF;
-    padding-top: 60px;
-    margin: 0 auto;
     display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+   
     
     
 }
@@ -302,7 +308,7 @@ img{
     flex-direction: column;
     list-style: none;
     margin-top: 20px;
-    margin: 0 auto;
+ 
 }
 
 
@@ -403,8 +409,7 @@ img{
     letter-spacing: 0.06em;
     text-align: left;
     padding-left: 24px;
-    padding-top: 24px;
-  
+    padding-top: 24px; 
 }
 
 .project-type {
